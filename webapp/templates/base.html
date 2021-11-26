@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCC Groupo 2</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/index.css') }}">
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class='header_logo'>
+          <a href="/home"><img src="{{ url_for('static',filename='img/IMG-20211122-WA0073.jpg') }}"  alt="main-logo" class="logo" /></a>
+        </div>  
+    </header>
+
+    {% block section %}{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block section %}
+
+<section class='home'>
+    <div class='Title'>
+        <h1>INPUTS:</h1>
+    </div>
+    <div class='Inputs'>
+        <form method="POST">
+        {% for cols in data %}
+            <div class='container'>
+                <div class='block'>
+                    <p>{{ cols }}:</p>
+                    <input name="{{ cols }}"> 
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <div class='run'>
+        <button class="calc"  type="submit">
+            <span class='front'>
+                Run Prediction
+            </span>
+        </button>
+        </form>
+    </div>
+</section>
+
+{% endblock %}
